@@ -9,6 +9,10 @@ import { store } from './back/sr';
     setfirst({...first,[e.target.name]:e.target.value});
   }
   const send = ()=>{
+   if(first.name==""||first.email==""||first.description==""){
+     alert("please fill the require field");
+    return;
+   }
  try{
   let y = store(first.name,first.email,first.description);
   console.log(y)
@@ -24,7 +28,7 @@ import { store } from './back/sr';
         <h1>Wecome My Portfolio</h1>
         <h2>Hello ! i am a Full Stack Web Devloper</h2>
         <div className='buttons'>
-         <Link style={{textDecoration:'none'}} href={"https://www.linkedin.com/in/ankur-goyal-535029320"}><div className='btn'> Linkdin </div></Link>  
+         <Link style={{textDecoration:'none'}} href={"https://www.linkedin.com/in/ankur-goyal-535029320"}><div className='btn'> Linkedin </div></Link>  
          <Link style={{textDecoration:'none'}} href={"https://github.com/ankurgoyal31/"}><div className='btn'> Github </div></Link>  
         </div>
       </div>
