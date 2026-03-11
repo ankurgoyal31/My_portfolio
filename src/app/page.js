@@ -9,10 +9,6 @@ import { store } from './back/sr';
     setfirst({...first,[e.target.name]:e.target.value});
   }
   const send = ()=>{
-   if(first.name==""||first.email==""||first.description==""){
-     alert("please fill the require field");
-    return;
-   }
  try{
   let y = store(first.name,first.email,first.description);
   console.log(y)
@@ -23,35 +19,37 @@ import { store } from './back/sr';
   } 
   return (
     <>
+    <div className='set_width'> 
     <div>
       <div className='greet'>
+        <img className='image' width={"150px"} height={"150px"} src="/myimage.jpeg" alt="" />
+        <h2>Ankur goyal</h2>
         <h1>Wecome My Portfolio</h1>
-        <h2>Hello ! i am a Full Stack Web Devloper</h2>
+        <h2>Hello ! i am a Full Stack Web Devloper With Ai</h2>
         <div className='buttons'>
-         <Link style={{textDecoration:'none'}} href={"https://www.linkedin.com/in/ankur-goyal-535029320"}><div className='btn'> Linkedin </div></Link>  
+         <Link style={{textDecoration:'none'}} href={"https://www.linkedin.com/in/ankur-goyal-535029320"}><div className='btn'> Linkdin </div></Link>  
          <Link style={{textDecoration:'none'}} href={"https://github.com/ankurgoyal31/"}><div className='btn'> Github </div></Link>  
         </div>
       </div>
-      <img className='setimage' width={"100%"} height={"800px"} src="https://chools.in/wp-content/uploads/0274207612d515f49012c87803a9e631.gif" alt="" />
+      <img className='setimage' width={"100%"} height={"700px"} src="https://assets-v2.lottiefiles.com/a/4c271a64-1167-11ee-8ab3-67521f0ca529/Lq3stVUtsl.gif" alt="" />
        <div className='whole'>
-        
-      <img className='image' width={"150px"} height={"150px"} src="/myimage.jpeg" alt="" />
-      <div className='profile'>Ankur Goyal</div>
-      </div>
+               </div>
      </div>
     <div className='main'> 
+      <div className='center'> 
       <h1 className='title'>About Me </h1>
       <p>
 I am a Full Stack Developer and 3rd-year Computer Science student passionate about building scalable web applications and AI-powered systems. I have hands-on experience with React.js, Next.js, Node.js, and MongoDB.
 </p>
-
-<p>
+ <p>
 I have developed real-world projects including LLM-integrated chat applications, vector-based recommendation systems, complaint management platforms, and production-ready full-stack applications.
 </p>
 
 <p>
 I focus on writing clean, efficient code and building practical solutions that solve real problems.
 </p>
+</div>
+
           <h3 className='title'>My  Skills</h3> 
 
     <div className='language'>
@@ -256,6 +254,22 @@ Deployed full-stack app using Next.js and MongoDB.</p>
         check out
        </Link>      </div>
       </div>
+<div className='box2'>
+      
+      <h2>
+ Ai Movie Review System
+      </h2>
+      <p>Developed a full-stack complaint tracking platform with role-based
+access control for users and admins. Designed and implemented
+secure CRUD REST APIs for complaint creation, status updates,
+and data management. Integrated authentication and protected
+routes. Deployed production-ready application using Next.js,
+Node.js, and MongoDB.</p>
+     <div className='product'>  <Link style={{textDecoration:'none',color:'black'}} href={"https://civic-complaint-system-i5w8.vercel.app/"}>  
+        check out
+       </Link>      </div> 
+      </div>
+
        <div className='box2'>
        
       <h2>
@@ -310,7 +324,7 @@ the application with production-ready configuration.</p>
 
   </form>
 </div>
-
+</div>
      </>
   )
 }
