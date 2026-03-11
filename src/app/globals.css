@@ -76,7 +76,7 @@ justify-items: center;
   padding: 15px;
   width: 180px;
   text-align: center;
-  color: #050505;
+  color: white;
   font-size: 25px;
  }
  .product{
@@ -118,7 +118,7 @@ justify-items: center;
   }
   .greet{
    font-weight: 900px;
-    color:#07010e;
+    color:#fff;
     top:7%;
    }
     
