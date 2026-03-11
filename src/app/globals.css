@@ -118,7 +118,7 @@ justify-items: center;
   }
   .greet{
    font-weight: 900px;
-   top: 5%;
+    
    }
     
   .btn{
@@ -126,7 +126,7 @@ justify-items: center;
   padding: 10px;
   width: 100px;
   text-align: center;
-  color: rgb(6, 6, 6);
+ color: rgb(255 252 252);
   font-size: 25px;
   font-weight: 500;
   background-color: #090b0987;
