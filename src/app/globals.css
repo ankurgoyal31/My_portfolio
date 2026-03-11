@@ -1,14 +1,13 @@
 body{
-  background: linear-gradient(270deg, #20191c, #161418, #110b0c, #010405,rgb(12, 13, 13));
+  background: linear-gradient(270deg, #8a8484, #4d4c4e, #5a5959, #737576,rgb(121, 115, 120));
     background-size: 800% 800%;
-  animation: waveBG 7s ease infinite;
+  animation: waveBG 4s ease infinite;
   font-family: Arial, sans-serif;
-  width: 100%;
- /* flex-wrap: wrap; */
- overflow-x: hidden;
+   overflow-x: hidden;
  margin: 0;
   padding: 0;
-}
+  height: 100vh;
+ }
 @keyframes waveBG {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
@@ -31,6 +30,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 25px;
+  box-shadow: 2px 2px 15px rgb(5, 142, 180);
  }
  .box:hover{
   background:linear-gradient(rgb(9, 143, 181),rgb(56, 20, 48),#20b7a0);
@@ -39,19 +39,15 @@ body{
   display: flex;
   gap: 20px;
   padding: 15px;
- justify-content: center;
    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-   /* margin-top: 10%; */
-  }
-  .main{
-    margin-top: 6%;
-  }
+    overflow-x: auto;
+    scrollbar-width: none;
+   }
+   
   .image{
   border-radius: 300px;
-  position: absolute;
-  left: 40%;
-  bottom: 5%;
-}
+
+  }
 .profile{
    position: absolute;
   left: 40%;
@@ -61,20 +57,26 @@ body{
 }
 .greet{
   position: absolute;
-  top: 20%;
-  color: rgb(1, 1, 1);
-}
+  top: 10%;
+   color: rgb(78, 1, 1);
+  width: 100vw;
+ font-weight: bold;
+text-align: center;
+justify-items: center;
+ }
 .buttons{
  display: flex;
  gap: 10px;
- margin-top: 20%;
-}
+ }
+ .buttons:hover{
+  box-shadow: 2px 2px 15px red;
+ }
 .btn{
-  border: #69fcf2 solid 1px;
+  border: #d50521 solid 1px;
   padding: 15px;
   width: 180px;
   text-align: center;
-  color: #fbfcfc;
+  color: #050505;
   font-size: 25px;
  }
  .product{
@@ -89,10 +91,16 @@ body{
     border: #03955f solid 1px;
  background-color: #9344c4;
  }
- @media(max-width:767px){
-   .main{
-    margin-top: 40%;
+ .center{
+  text-align: center;
   }
+  .main{
+    color: rgb(1, 1, 1);
+    /* border: solid rebeccapurple 2px; */
+    width: 100%;
+    /* justify-self: center; */
+  }
+ @media(max-width:767px){
   .imagecover{
     /* position: fixed; */
   width: 50%;
@@ -103,22 +111,22 @@ body{
    position: absolute;
   font-size: 30px;
   top: 10%;
-  width: 190px;
+  width: 170px;
  }
   .setimage{
-    height: 500px;
+    height: 600px;
   }
   .greet{
-  color: #f9eb71;
-  font-weight: 900px;
-  top: 5%;
+   font-weight: 900px;
+   top: 5%;
    }
+    
   .btn{
   border: #04bacb solid 1px;
   padding: 10px;
   width: 100px;
   text-align: center;
-  color: white;
+  color: rgb(6, 6, 6);
   font-size: 25px;
   font-weight: 500;
   background-color: #090b0987;
@@ -151,6 +159,7 @@ body{
   color: white;
   font-weight: 900;
   color: #04c4de;
+  margin-left: 2%;
  }
  .project{
   display: flex;
@@ -166,7 +175,7 @@ body{
   padding-bottom: 30px;
   }
 p{
-  color: #cfd8ff;
+  color: #010101;
   font-weight:bold;
 }
 
