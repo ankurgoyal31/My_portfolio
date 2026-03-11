@@ -58,7 +58,7 @@ body{
 .greet{
   position: absolute;
   top: 10%;
-   color: rgb(78, 1, 1);
+   color: color: #fff;
   width: 100vw;
  font-weight: bold;
 text-align: center;
@@ -127,7 +127,7 @@ justify-items: center;
   padding: 10px;
   width: 100px;
   text-align: center;
- color: rgb(255 252 252);
+ color: #52a9ff;
   font-size: 25px;
   font-weight: 500;
   background-color: #090b0987;
