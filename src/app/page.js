@@ -35,7 +35,7 @@ import { store } from './back/sr';
          <Link style={{textDecoration:'none'}} href={"https://github.com/ankurgoyal31/"}><div className='btn'> Github </div></Link>  
         </div>
       </div>
-      <img className='setimage' width={"100%"} height={"700px"} src="https://assets-v2.lottiefiles.com/a/4c271a64-1167-11ee-8ab3-67521f0ca529/Lq3stVUtsl.gif" alt="" />
+      <img className='setimage' width={"100%"} height={"700px"} src="https://blogs.mathworks.com/matlab/files/2024/02/animatingFlickbook_1.gif" alt="" />
        <div className='whole'>
                </div>
      </div>
