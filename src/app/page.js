@@ -9,6 +9,10 @@ import { store } from './back/sr';
     setfirst({...first,[e.target.name]:e.target.value});
   }
   const send = ()=>{
+   if(first.name==="" || first.email==="" || first.description===""){
+    alert("please fill the require field..") 
+    return
+   }
  try{
   let y = store(first.name,first.email,first.description);
   console.log(y)
