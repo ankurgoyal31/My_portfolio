@@ -36,6 +36,7 @@ el.style.animation="glowPulse 2.5s infinite";
     el.style.color = "#bd09ea";
   });
   box.forEach(el=>{
+   el.style.animation="none";
    });
   }
      
