@@ -24,7 +24,7 @@ body{
   text-align: center;
   padding: 7px;
   height: 200px;
-  border: solid #04c4de 2px;
+  border: solid #04c4de 1px;
   box-shadow: 2px 2px 10px;
   border-radius: 10px;
   display: flex;
