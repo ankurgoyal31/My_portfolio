@@ -169,7 +169,7 @@ color: white;
      justify-self: center;
      border-image: linear-gradient(45deg, cyan, blue, purple, cyan) 1;
 
-animation: borderMove 1s linear infinite;
+animation: borderMove 5s linear infinite;
   }
 }
  .learn{
