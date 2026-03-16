@@ -2,17 +2,48 @@
 import Link from 'next/link';
 import React from 'react'
 import { store } from './back/sr';
- import { useState } from 'react';
+ import { useState,useEffect } from 'react';
  const page = () => {
   const [first, setfirst] = useState({name:'',email:'',description:''})
   const handle = (e)=>{
     setfirst({...first,[e.target.name]:e.target.value});
   }
+  useEffect(() => {
+    let info =document.querySelector(".greet");
+    let about = document.querySelector(".center");
+    let learn = document.querySelectorAll(".learn");
+    let box = document.querySelectorAll(".box")
+    info.style.fontSize = "18px"
+    function change() {
+      if(window.scrollY>20){
+about.style.color = " #667688";
+about.style.fontSize = "18px";
+    }else {
+    about.style.color = "white";
+    about.style.fontSize = "16px";
+  }
+    if(window.scrollY>460){
+ learn.forEach(el=>{
+    el.style.color = "#f5f7f9";
+  });
+  box.forEach(el=>{
+   }); 
+
+ }else{
+    learn.forEach(el=>{
+    el.style.color = "#bd09ea";
+  });
+  box.forEach(el=>{
+   });
+  }
+     
+     }
+      window.addEventListener("scroll",change);
+    return ()=>window.removeEventListener("scroll",change)
+   
+   }, [])
+  
   const send = ()=>{
-   if(first.name==="" || first.email==="" || first.description===""){
-    alert("please fill the require field..") 
-    return
-   }
  try{
   let y = store(first.name,first.email,first.description);
   console.log(y)
@@ -27,6 +58,7 @@ import { store } from './back/sr';
     <div>
       <div className='greet'>
         <img className='image' width={"150px"} height={"150px"} src="/myimage.jpeg" alt="" />
+        {/* <img src="https://static.naukimg.com/s/8/801/i/src/resources/svg/chat-emoji.1d26c5e5.svg" alt="" /> */}
         <h2>Ankur goyal</h2>
         <h1>Wecome My Portfolio</h1>
         <h2>Hello ! i am a Full Stack Web Devloper With Ai</h2>
@@ -35,7 +67,12 @@ import { store } from './back/sr';
          <Link style={{textDecoration:'none'}} href={"https://github.com/ankurgoyal31/"}><div className='btn'> Github </div></Link>  
         </div>
       </div>
-      <img className='setimage' width={"100%"} height={"700px"} src="https://blogs.mathworks.com/matlab/files/2024/02/animatingFlickbook_1.gif" alt="" />
+       {/* <video width={"100%"} height={"700px"} autoPlay loop muted playsInline>
+          <source  src="https://previews.customer.envatousercontent.com/h264-video-previews/1722475.mp4" type="video/mp4" />
+        </video> */}
+          <img  style={{backgroundSize:'cover',backgroundPosition:'center'}} className='setimage' width={"100%"} height={"700px"} src="https://blogs.mathworks.com/matlab/files/2024/02/animatingFlickbook_1.gif" alt="" />
+
+      {/* <img className='setimage' width={"100%"} height={"700px"} src="https://assets-v2.lottiefiles.com/a/4c271a64-1167-11ee-8ab3-67521f0ca529/Lq3stVUtsl.gif" alt="" /> */}
        <div className='whole'>
                </div>
      </div>
@@ -269,7 +306,7 @@ secure CRUD REST APIs for complaint creation, status updates,
 and data management. Integrated authentication and protected
 routes. Deployed production-ready application using Next.js,
 Node.js, and MongoDB.</p>
-     <div className='product'>  <Link style={{textDecoration:'none',color:'black'}} href={"https://movie-assignment-black.vercel.app/"}>  
+     <div className='product'>  <Link style={{textDecoration:'none',color:'black'}} href={"https://civic-complaint-system-i5w8.vercel.app/"}>  
         check out
        </Link>      </div> 
       </div>
