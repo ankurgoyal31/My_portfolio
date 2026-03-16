@@ -13,6 +13,7 @@ import { store } from './back/sr';
     let about = document.querySelector(".center");
     let learn = document.querySelectorAll(".learn");
     let box = document.querySelectorAll(".box")
+    // console.log(info)
     info.style.fontSize = "18px"
     function change() {
       if(window.scrollY>20){
@@ -27,7 +28,8 @@ about.style.fontSize = "18px";
     el.style.color = "#f5f7f9";
   });
   box.forEach(el=>{
-   }); 
+el.style.animation="glowPulse 2.5s infinite"; 
+  }); 
 
  }else{
     learn.forEach(el=>{
