@@ -36,13 +36,13 @@ transition: cubic-bezier(0.25, 0.1, 1,-0.21);
 }
 @keyframes glowPulse{
 0%{
-box-shadow:0 0 5px rgb(142, 234, 234);
+box-shadow:0 0 2px rgb(142, 234, 234);
 }
 50%{
-box-shadow:0 0 5px rgb(163, 236, 236),0 0 50px rgb(125, 230, 230);
+box-shadow:0 0 2px rgb(163, 236, 236),0 0 20px rgb(125, 230, 230);
 }
 100%{
-box-shadow:0 0 5px rgb(71, 160, 180);
+box-shadow:0 0 2px rgb(71, 160, 180);
 }
 }
  .box:hover{
