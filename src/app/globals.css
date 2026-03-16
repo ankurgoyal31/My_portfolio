@@ -24,31 +24,29 @@ body{
   text-align: center;
   padding: 7px;
   height: 200px;
-  border: solid #04c4de 1px;
+  border: solid #04c4de 2px;
   box-shadow: 2px 2px 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 25px;
   box-shadow: 2px 2px 15px rgb(5, 142, 180);
-  transition: transform 0.3s ease;
- }
- @keyframes borderMove{
+border:2px solid cyan;
+transition: cubic-bezier(0.25, 0.1, 1,-0.21);
+}
+@keyframes glowPulse{
 0%{
-border-image: linear-gradient(0deg, cyan, blue, purple, cyan) 1;
+box-shadow:0 0 5px rgb(142, 234, 234);
 }
 50%{
-border-image: linear-gradient(180deg, purple, cyan, blue, purple) 1;
+box-shadow:0 0 5px rgb(163, 236, 236),0 0 50px rgb(125, 230, 230);
 }
 100%{
-border-image: linear-gradient(360deg, cyan, blue, purple, cyan) 1;
+box-shadow:0 0 5px rgb(71, 160, 180);
 }
 }
  .box:hover{
   background:linear-gradient(rgb(9, 143, 181),rgb(56, 20, 48),#20b7a0);
-   border-image: linear-gradient(45deg, cyan, blue, purple, cyan) 1;
-
-animation: borderMove 1s linear infinite;
  }
   .language{
   display: flex;
@@ -115,16 +113,16 @@ color: white;
   }
   .main{
     color: rgb(1, 1, 1);
+    /* border: solid rebeccapurple 2px; */
     width: 100%;
+    /* justify-self: center; */
    transition: font-size 7.5s ease;
 
   }
  @media(max-width:767px){
   .imagecover{
-   
-  width: 50%;
- 
-  object-fit: cover;
+   width: 50%;
+   object-fit: cover;
  }
   .profile{
    position: absolute;
@@ -156,8 +154,7 @@ color: white;
   left: 30%; 
  }
     .language{
-      /* padding-left: 20px; */
-     overflow-x: auto;
+      overflow-x: auto;
      justify-content: flex-start;
      left: 0%;
       }
@@ -167,10 +164,8 @@ color: white;
     font-size: 19px;
     height: auto;
      justify-self: center;
-     border-image: linear-gradient(45deg, cyan, blue, purple, cyan) 1;
-
-animation: borderMove 10s linear infinite;
-  }
+ 
+   }
 }
  .learn{
   color: #640369;
@@ -199,7 +194,7 @@ animation: borderMove 10s linear infinite;
   }
 p{
    font-weight:bold;
-}
+ }
 
 .contact-container {
   display: flex;
@@ -273,7 +268,7 @@ p{
 
 .contact-card {
   width: 100%;
-  max-width: 700px;    
+  max-width: 700px;  
   padding: 40px;
   border-radius: 15px;
   background: rgba(10, 10, 20, 0.9);
