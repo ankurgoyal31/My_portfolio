@@ -47,6 +47,10 @@ el.style.animation="glowPulse 2.5s infinite";
    }, [])
   
   const send = ()=>{
+   if(first.name===""||first.email===""||first.description){
+    alert("please fill the require field");
+    return;
+   }
  try{
   let y = store(first.name,first.email,first.description);
   console.log(y)
