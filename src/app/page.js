@@ -61,7 +61,6 @@ el.style.animation="glowPulse 2.5s infinite";
     <div>
       <div className='greet'>
         <img className='image' width={"150px"} height={"150px"} src="/myimage.jpeg" alt="" />
-        {/* <img src="https://static.naukimg.com/s/8/801/i/src/resources/svg/chat-emoji.1d26c5e5.svg" alt="" /> */}
         <h2>Ankur goyal</h2>
         <h1>Wecome My Portfolio</h1>
         <h2>Hello ! i am a Full Stack Web Devloper With Ai</h2>
@@ -70,12 +69,7 @@ el.style.animation="glowPulse 2.5s infinite";
          <Link style={{textDecoration:'none'}} href={"https://github.com/ankurgoyal31/"}><div className='btn'> Github </div></Link>  
         </div>
       </div>
-       {/* <video width={"100%"} height={"700px"} autoPlay loop muted playsInline>
-          <source  src="https://previews.customer.envatousercontent.com/h264-video-previews/1722475.mp4" type="video/mp4" />
-        </video> */}
-          <img  style={{backgroundSize:'cover',backgroundPosition:'center'}} className='setimage' width={"100%"} height={"700px"} src="https://blogs.mathworks.com/matlab/files/2024/02/animatingFlickbook_1.gif" alt="" />
-
-      {/* <img className='setimage' width={"100%"} height={"700px"} src="https://assets-v2.lottiefiles.com/a/4c271a64-1167-11ee-8ab3-67521f0ca529/Lq3stVUtsl.gif" alt="" /> */}
+  <img  style={{backgroundSize:'cover',backgroundPosition:'center'}} className='setimage' width={"100%"} height={"700px"} src="https://blogs.mathworks.com/matlab/files/2024/02/animatingFlickbook_1.gif" alt="" />
        <div className='whole'>
                </div>
      </div>
@@ -309,7 +303,7 @@ secure CRUD REST APIs for complaint creation, status updates,
 and data management. Integrated authentication and protected
 routes. Deployed production-ready application using Next.js,
 Node.js, and MongoDB.</p>
-     <div className='product'>  <Link style={{textDecoration:'none',color:'black'}} href={"https://civic-complaint-system-i5w8.vercel.app/"}>  
+     <div className='product'>  <Link style={{textDecoration:'none',color:'black'}} href={"https://movie-assignment-black.vercel.app/"}>  
         check out
        </Link>      </div> 
       </div>
