@@ -13,17 +13,17 @@ import { store } from './back/sr';
     let about = document.querySelector(".center");
     let learn = document.querySelectorAll(".learn");
     let box = document.querySelectorAll(".box")
-    // console.log(info)
+     
     info.style.fontSize = "18px"
     function change() {
-      if(window.scrollY>20){
+      if(window.scrollY>400){
 about.style.color = " #667688";
 about.style.fontSize = "18px";
     }else {
     about.style.color = "white";
     about.style.fontSize = "16px";
   }
-    if(window.scrollY>460){
+    if(window.scrollY>560){
  learn.forEach(el=>{
     el.style.color = "#f5f7f9";
   });
